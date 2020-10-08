@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* set background color for body of page */ 
+body {
+    background-color: #d9dcd6;
+}
+
+/* Header attributes for header, h1 and specific color for 'seo' text
+// Replaced header class with header tag
+*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+
+/* nav (navigation) attributes for nav section and unordered list
+*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    top: 0px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+/* footer attributes for list of contact
+*/
+.contact ul {
+    list-style-type: none;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin-left: 25px;
+
+}
