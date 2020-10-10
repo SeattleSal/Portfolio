@@ -47,6 +47,34 @@ header nav ul li {
 
 }
 
+/* trying out grid for main content formatting */
+.item1 { grid-area: about; }
+.item2 { grid-area: work; }
+.contact { grid-area: contact; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'about about about about about'
+      'work work work work work'
+      'contact contact contact contact contact';
+    grid-gap: 10px;
+    background-color: blueviolet;
+    padding: 10px;
+  }
+
+  .grid-container h1 {
+      float: left;
+  }
+
+  .grid-container > section {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    float: right;
+  }
+
 /* footer attributes for list of contact
 */
 .contact ul {
