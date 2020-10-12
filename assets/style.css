@@ -9,6 +9,10 @@ body {
     background-color: #d9dcd6;
 }
 
+main {
+    display: flex;
+}
+
 /* Header attributes for header, h1 and specific color for 'seo' text
 // Replaced header class with header tag
 */
@@ -64,24 +68,33 @@ main {
 .card-header {
     position: relative;
     float: left;
-    color: blue;
+    color: white;
     width: 20%;
+    font-size: 40pt;
+    text-align: right;
 
 }
 
-  .grid-container h1 {
+.card-content {
+    float: right;
+    width: 75%;
+    margin-left: 1pt;
+}
+
+  /* .grid-container h1 {
       float: left;
-  }
+  } */
 
 
-/* footer attributes for list of contact
+/* attributes for list of contact
 */
-.contact ul {
+.card-content ul {
     list-style-type: none;
+
 }
 
-.contact ul li {
+.card-content ul li {
     display: inline-block;
-    margin-left: 25px;
-
+    margin-left:10px;
+    justify-content: space-between;
 }
