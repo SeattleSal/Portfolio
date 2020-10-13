@@ -14,25 +14,15 @@ main {
 }
 
 
-/* hero (big image) dimensions set here
-*/
-#hero {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("glazed-doughnuts-over-pink-background.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* Header attributes for header, h1 and specific color for 'seo' text
+/* Header attributes for header
 // Replaced header class with header tag
 */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
     background-color: blue;
+    color: white;
+
 }
 
 /*  header h1 attributes */
@@ -61,6 +51,32 @@ header nav ul li {
     display: inline-block;
     margin-left: 25px;
 
+}
+
+/* set color of hyperlinks */
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* hero (big image) dimensions set here
+*/
+#hero {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("glazed-doughnuts-over-pink-background.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+}
+
+/* TO DO: move the heading to the bottom right of the image */
+#hero h2{
+    text-align: right;
+    /* background-color: lightblue;
+    float: -50px;
+    float: right; */
 }
 
 /* trying out flex boxes and relative spacing */
