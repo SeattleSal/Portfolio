@@ -61,15 +61,31 @@ a {
 
 /* hero (big image) dimensions set here
 */
-#hero {
+.hero-image {
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("glazed-doughnuts-over-pink-background.jpg");
+    background-image: url("./glazed-doughnuts-over-pink-background.jpg");
     background-size: cover;
     background-position: center;
-    display:flex;
+    background-repeat: no-repeat;
+    position: relative; /*do i need this?*/
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
+
+/* Place text on bottom right of the image */
+.hero-text {
+    background-color: #739FD0;
+    color: white;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+
+  }
+
 
 /* TO DO: move the heading to the bottom right of the image */
 /* #hero h2{
@@ -89,7 +105,6 @@ main {
 
 .card {
     padding: 20px;
-    border: solid;
     width: 100%
 }
 
@@ -101,7 +116,8 @@ main {
     width: 20%;
     font-size: 40pt;
     text-align: right;
-    
+    margin-right: 5px;
+
 
 }
 
@@ -109,6 +125,7 @@ main {
     float: right;
     width: 75%;
     margin-left: 1pt;
+    border-left: #1c1d21 2px solid;
 }
 
   /* .grid-container h1 {
@@ -120,14 +137,20 @@ main {
 */
 .card-content ul {
     list-style-type: none;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #445877;
+    text-decoration: underline;
 }
 
 .card-content ul li {
-    display: inline-block;
+
     margin-left:10px;
     /* this justify content does NOT work here, not sure why */
-    justify-content: space-between;
+
 }
 
 .grid-container {
