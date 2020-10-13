@@ -72,12 +72,12 @@ a {
 }
 
 /* TO DO: move the heading to the bottom right of the image */
-#hero h2{
-    text-align: right;
+/* #hero h2{
+
     /* background-color: lightblue;
     float: -50px;
-    float: right; */
-}
+    float: right;
+} */
 
 /* trying out flex boxes and relative spacing */
 
@@ -129,3 +129,15 @@ main {
     /* this justify content does NOT work here, not sure why */
     justify-content: space-between;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
