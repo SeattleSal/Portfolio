@@ -4,15 +4,18 @@
     margin: 0;
 }
 
+:root {
+    --darkBlue: #445877;
+    --lightBlue: #92ccce;
+    --darkGray: #31343d;
+    --black: #1c1d21;
+    --lightColor: #eeeef7;
+}
+
 /* set background color for body of page */ 
 body {
-    background-color: #d9dcd6;
+    background-color: var(--lightColor);
 }
-
-main {
-    display: flex;
-}
-
 
 /* Header attributes for header
 // Replaced header class with header tag
@@ -20,7 +23,7 @@ main {
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: blue;
+    background-color: var(--darkGray);
     color: white;
 
 }
@@ -55,7 +58,7 @@ header nav ul li {
 
 /* set color of hyperlinks */
 a {
-    color: #ffffff;
+    color: var(--lightBlue);
     text-decoration: underline;
 }
 
@@ -83,29 +86,23 @@ a {
 
 /* Place text on bottom right of the image */
 .hero-text {
-    background-color: #739FD0;
-    color: white;
+    background-color: var(--lightBlue);
+    color: var(--darkBlue);
     position: absolute;
     right: 5%;
     bottom: 5%;
+}
 
-  }
+.hero-text h2 {
+    font-size: 18pt;
+}
 
-
-/* TO DO: move the heading to the bottom right of the image */
-/* #hero h2{
-
-    /* background-color: lightblue;
-    float: -50px;
-    float: right;
-} */
-
-/* trying out flex boxes and relative spacing */
-
+/* have main as flex box now but not sure if would be better
+// as a grid.
+*/
 main {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .card {
@@ -113,24 +110,26 @@ main {
     width: 100%
 }
 
+.card p {
+    color: var(--darkBlue);
+}
+
 .card-header {
     position: relative;
     float: left;
-    background-color: white;
-    color: darkblue;
-    width: 20%;
-    font-size: 40pt;
+    color: var(--darkBlue);
+    width: 24%;
+    font-size: 26pt;
     text-align: right;
     margin-right: 5px;
-
-
+    padding: 30px;
+    border-right: var(--darkBlue) 2px solid;
 }
 
 .card-content {
     float: right;
-    width: 75%;
-    margin-left: 1pt;
-    border-left: #1c1d21 2px solid;
+    width: 74%;
+
 }
 
   /* .grid-container h1 {
@@ -142,30 +141,38 @@ main {
 */
 .card-content ul {
     list-style-type: none;
+    color: var(--darkBlue);
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 20px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    text-decoration: underline;
-    font-size: 20px;
-    color: #445877;
-    text-decoration: underline;
+    align-items: center;
 }
 
 .card-content ul li {
-
     margin-left:10px;
     /* this justify content does NOT work here, not sure why */
-
 }
 
+/* grid container for work content listing images with text overlay */
 .grid-container {
     display: grid;
     grid-template-columns: 40% 40%;
+    grid-template-areas: "item1 item1 . . . ."
     grid-gap: 10px;
     padding: 10px;
 }
 
-.grid-item1 {
+.grid-item {
+    border: 8px solid #92ccce;
+  }
+
+#item1 {
+    grid-area: "item1";
     grid-column-start: 1;
     grid-column-end: 3;
-  }
+
+}
