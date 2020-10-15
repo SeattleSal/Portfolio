@@ -139,40 +139,43 @@ main {
 
 }
 
-/* #work-content img {
-    border: 8px solid var(--lightBlue);
-    margin: 5pt;
-    width: 45%;
-} */
-
-
-#item1 {
-    background-image: url("https://placekitten.com/800/400");
-    background-size:auto;
-    width: 100%;
-    height: 300px;
-    border: 8px solid var(--lightBlue);
+#item1, #item2, #item3, #item4, #item5 {
+    position: relative;
 }
 
-#item1 p {
-    text-align: center;
-    position: absolute;
-
+#item1 {
+    width: 100%;
 }
 
 #item2, #item3, #item4, #item5 {
-    background-image: url("https://placekitten.com/350/200");
-    background-position: center;
-    background-size: auto;
     width: 50%;
-    height: 150px;
-    border: 8px solid var(--lightBlue);
 }
 
-  /* .grid-container h1 {
-      float: left;
-  } */
+#item1 img {
+    width: 100%; 
+    height: 300px;
+    border: 8px solid var(--lightBlue);
+    /* margin: 5pt;
+    width: 45%; */
+}
 
+#item2 img, #item3 img, #item4 img, #item5 img {
+    width: 100%;
+    height: 150px;
+    border: 8px solid var(--lightBlue);  
+    margin: 1pt;
+}
+
+#item1 h2, #item2 h2, #item3 h2, #item4 h2, #item5 h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--lightBlue);
+    color: var(--lightColor);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
 
 /* attributes for list of contact
 */
@@ -192,6 +195,34 @@ main {
 .card-content ul li {
     margin-left:10px;
     /* this justify content does NOT work here, not sure why */
+}
+
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+
+/* making media rules for smaller screens */
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+    main{
+        flex-direction: row;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    main{
+        flex-direction: row;
+    }
+
 }
 
 /* grid container for work content listing images with text overlay */
@@ -226,18 +257,4 @@ main {
 
 .grid-container img{
     border: 8px solid #92ccce;
-} */
-
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-
-
-/* #item1 {
-    grid-area: "item1";
-    grid-column-start: 1;
-    grid-column-end: 3;
-
 } */
