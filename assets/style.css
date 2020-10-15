@@ -150,6 +150,10 @@ main {
     width: 50%;
 }
 
+#work-content img{
+    opacity: 0.8;
+}
+
 #item1 img {
     width: 100%; 
     height: 300px;
@@ -176,11 +180,7 @@ main {
 
 }
 
-/* update hover to make fade and vibrant */
-#item1:hover {
-    font-size: 50pt;
-    color: red;
-}
+
 
 
 /* attributes for list of contact
@@ -210,23 +210,24 @@ main {
     left: 16px;
   }
 
+  /* update hover to make fade and vibrant */
+#item1 img:hover, #item2 img:hover, #item3 img:hover, #item4 img:hover, #item5 img:hover {
+    opacity: 1;
+}
 
 /* making media rules for smaller screens */
 @media screen and (max-width: 992px) {
-    .card {
-      width: 50%;
-    }
     main{
-        flex-direction: row;
+        flex-direction: column;
+    }
+    .card {
+      width: 100%;
     }
   }
   
   @media screen and (max-width: 768px) {
     .card {
       width: 100%;
-    }
-    main{
-        flex-direction: row;
     }
 
 }
