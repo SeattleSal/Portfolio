@@ -129,7 +129,6 @@ main {
 .card-content {
     float: right;
     width: 74%;
-
 }
 
 #work-content {
@@ -176,6 +175,13 @@ main {
     padding-right: 20px;
 
 }
+
+/* update hover to make fade and vibrant */
+#item1:hover {
+    font-size: 50pt;
+    color: red;
+}
+
 
 /* attributes for list of contact
 */
