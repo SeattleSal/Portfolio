@@ -158,7 +158,7 @@ main {
 }
 
 /* grid container for work content listing images with text overlay */
-.grid-container {
+/* .grid-container {
     display: grid;
     grid-template-columns: 40% 40%;
     grid-template-areas: 'item1 item1'
@@ -166,15 +166,41 @@ main {
                         '. .';
     grid-gap: 10px;
     padding: 10px;
-}
+} */
 
-.grid-item img{
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) .1fr repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) .1fr 1fr .1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .item1 { grid-area: 1 / 1 / 3 / 6; }
+    .item2 { grid-area: 4 / 1 / 5 / 3; }
+    .item3 { grid-area: 4 / 4 / 5 / 6; }
+    .item4 { grid-area: 6 / 1 / 7 / 3; }
+    .item5 { grid-area: 6 / 4 / 7 / 6; }
+
+    .item1 {
+        position: relative;
+        text-align: center;
+    }
+
+.grid-container img{
     border: 8px solid #92ccce;
 }
 
-#item1 {
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+
+/* #item1 {
     grid-area: "item1";
     grid-column-start: 1;
     grid-column-end: 3;
 
-}
+} */
