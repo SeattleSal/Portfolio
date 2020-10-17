@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+/* color scheme for page */
 :root {
     --darkBlue: #445877;
     --lightBlue: #92ccce;
@@ -17,8 +18,7 @@ body {
     background-color: var(--lightColor);
 }
 
-/* Header attributes for header
-// Replaced header class with header tag
+/* Header attributes for top header banner with name and nav links
 */
 header {
     padding: 20px;
@@ -34,10 +34,8 @@ header {
 
 /*  header h1 attributes */
 header h1 {
-    /* display: inline-block; */
     font-size: 48px;
 }
-
 
 /* nav (navigation) attributes for nav section and unordered list
 */
@@ -58,22 +56,22 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
-
 }
 
-/* set color of hyperlinks */
-a {
+/* set color of hyperlinks in header */
+header a {
     color: var(--lightBlue);
     text-decoration: underline;
 }
 
 /* hero (big image) dimensions set here
+// hero image and overlapping text displayed right after the header banner
 */
-
 .hero {
     position: relative;
     display: inline-block;
 }
+
 .hero-image {
     height: 200px;
     width: 100%;
@@ -102,14 +100,18 @@ a {
     font-size: 18pt;
 }
 
-/* have main as flex box now but not sure if would be better
-// as a grid.
+/* have main as flex box 
+// TO DO - does this need to be flex since all cards are flex?
 */
 main {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* three main card sections (about me, work, contact me)
+// setup in flex style for formatting and to be able to adjust
+// look in media queries at bottom of css
+*/
 .card {
     display: flex;
     flex-direction: row;
@@ -136,6 +138,7 @@ main {
 .card-content {
     float: right;
     width: 74%;
+    padding: 10px;
 }
 
 #work-content {
@@ -157,6 +160,9 @@ main {
     width: 50%;
 }
 
+/* setting opacity of images in work section to allow hover
+// to make images appear full opacity
+*/
 #work-content img{
     opacity: 0.8;
 }
@@ -165,8 +171,6 @@ main {
     width: 100%; 
     height: 300px;
     border: 8px solid var(--lightBlue);
-    /* margin: 5pt;
-    width: 45%; */
 }
 
 #item2 img, #item3 img, #item4 img, #item5 img {
@@ -181,25 +185,19 @@ main {
     bottom: 20px;
     left: 20px;
     background-color: var(--lightBlue);
-    color: var(--lightColor);
+    color: var(--black );
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
-/* add paragraph text descriptors here for inside class boxes */
+/* TO DO: add paragraph text descriptors here for inside class boxes */
 
-
-
-/* attributes for list of contact
-*/
+/* contact section, third and final card in main section */
 .card-content ul {
     list-style-type: none;
-    color: var(--darkBlue);
     text-decoration: underline;
     font-size: 20px;
     padding: 20px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -208,22 +206,27 @@ main {
 
 .card-content ul li {
     margin-left:10px;
-    /* this justify content does NOT work here, not sure why */
 }
 
+.card-content a {
+    color: var(--darkBlue);
+}
 
+/* text for work section images shows over bottom left
+// of each of the 5 images
+*/
 .bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
   }
 
-  /* update hover to make fade and vibrant */
+/* hover over each work image and the fade will dissapear */
 #item1 img:hover, #item2 img:hover, #item3 img:hover, #item4 img:hover, #item5 img:hover {
     opacity: 1;
 }
 
-/* making media rules for smaller screens */
+/* media rules to adjust formatting for for smaller screens */
 @media screen and (max-width: 992px) {
 
     header, header nav ul, .card, #work-content, .card-content ul {
@@ -250,13 +253,19 @@ main {
     #item2, #item3, #item4, #item5 {
         width: 100%;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+  /* TO DO: add formatting changes for smallest screen
+  //
+  */
+  /* @media screen and (max-width: 768px) {
     .card {
 
-    }
+    } */ 
 
-}
+
+
+  
+
+
 
 
