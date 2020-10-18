@@ -15,7 +15,7 @@ Full size:
 ![Portfolio screenshot fullsize](./assets/images/screencapture-full-size.png)
 
 Page at 992 px and below:
-![Portfolio screenshot at 992px](./assets/images/screencapture-992.png)
+![Portfolio screenshot at 992px](./assets/images/screencapture-992.png =250x)
 
 Page at 768px and below:
 ![Portfolio screenshot at 768px](./assets/images/screencapture-768.png)

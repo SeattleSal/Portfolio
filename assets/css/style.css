@@ -124,6 +124,7 @@ header a {
     color: var(--darkBlue);
     width: 24%;
     font-size: 26pt;
+    font-weight: bold;
     text-align: right;
     margin-right: 5px;
     padding: 30px;
