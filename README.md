@@ -10,5 +10,13 @@ The layout has been setup using flexbox to format on a regular screen but also b
 ## Use of CSS Variables
 Variables were used for the color scheme to keep the color palette consistent as well as easy to reference through out the css.
 
-## Screenshot
-![Portfolio screenshot](./assets/images/portfolio_screenshot.png)
+## Screenshots
+Full size:
+![Portfolio screenshot fullsize](./assets/images/screencapture-full-size.png)
+
+Page at 992 px and below:
+![Portfolio screenshot at 992px](./assets/images/screencapture-992.png)
+
+Page at 768px and below:
+![Portfolio screenshot at 768px](./assets/images/screencapture-768.png)
+

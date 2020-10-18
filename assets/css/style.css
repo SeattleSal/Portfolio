@@ -29,13 +29,16 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 /*  header h1 attributes */
 header h1 {
-    font-size: 48px;
-    
+    font-size: 48px;  
+}
+
+header h1 img {
+    width: 50px;
+    border-radius: 50%;
 }
 
 /* nav (navigation) attributes for nav section and unordered list
@@ -81,14 +84,14 @@ header a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative; /* To do: do i need this?*/
+    position: relative; 
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
 }
 
-/* Place text on bottom right of the image */
+/* Place text on bottom right of the hero image */
 .hero-text {
     background-color: var(--lightBlue);
     color: var(--darkBlue);
@@ -101,17 +104,8 @@ header a {
     font-size: 18pt;
 }
 
-/* have main as flex box 
-// TO DO - does this need to be flex since all cards are flex?
-*/
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* three main card sections (about me, work, contact me)
-// setup in flex style for formatting and to be able to adjust
-// look in media queries at bottom of css
+/* Three main card sections (about me, work, contact me)
+// setup in flex style for formatting and to be able to adjust layout in media queries
 */
 .card {
     display: flex;
@@ -181,6 +175,7 @@ main {
     margin: 1pt;
 }
 
+/* text to display over each image in bottom left hand corner */
 .text-box {
     position: absolute;
     bottom: 20px;
@@ -236,7 +231,7 @@ main {
 /* media rules to adjust formatting for for smaller screens */
 @media screen and (max-width: 992px) {
 
-    header, header nav ul, .card, #work-content, .card-content ul {
+    header, .card {
         flex-direction: column;
         align-items: center;
     }
@@ -245,9 +240,8 @@ main {
         height: 100pt;
     }
 
-    /* how do i make this centered? */
     .hero-text {
-        position: relative;
+        position: static;
     }
 
     .card-header {
@@ -257,17 +251,22 @@ main {
         border-bottom: var(--darkBlue) 2px solid;
     }
 
-    .small-item {
-        width: 100%;
+    header nav ul li, .card-content ul li {
+        margin: 10px;
     }
 }
-  /* TO DO: add formatting changes for smallest screen
-  //
-  */
-  /* @media screen and (max-width: 768px) {
-    .card {
 
-    } */ 
+  @media screen and (max-width: 768px) {
+
+    header nav ul, .card-content ul, #work-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-item {
+        width: 100%;
+    } 
+ } 
 
 
 
