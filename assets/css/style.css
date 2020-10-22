@@ -104,6 +104,13 @@ header a {
     font-size: 18pt;
 }
 
+/* set width attributes on main section */
+main {
+    width: 900px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 /* Three main card sections (about me, work, contact me)
 // setup in flex style for formatting and to be able to adjust layout in media queries
 */
@@ -122,7 +129,7 @@ header a {
     position: relative;
     float: none;
     color: var(--darkBlue);
-    width: 24%;
+    width: 20%;
     font-size: 26pt;
     font-weight: bold;
     text-align: right;
