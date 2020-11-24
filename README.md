@@ -21,5 +21,5 @@ Page at 768px and below:
 ![Portfolio screenshot at 768px](./assets/images/screencapture-768.png)
 
 ## Resources
-Clouds Photo - https://www.pexels.com/photo/atmosphere-background-beautiful-blue-531756/
-Hiking Photo - https://www.pexels.com/photo/group-of-person-walking-in-mountain-1365425/
+[Clouds Photo](./https://www.pexels.com/photo/atmosphere-background-beautiful-blue-531756/)
+[Hiking Photo](https://www.pexels.com/photo/group-of-person-walking-in-mountain-1365425/)
