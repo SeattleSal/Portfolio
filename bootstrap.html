@@ -11,59 +11,63 @@
 <body>
 <header class="container-fluid">
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
-    </div>
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link" href="#about-me">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#work">Work</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assets/srp_resume.pdf">Resume</a>
-        </li>
-      </ul>
+        <!-- <div class="container"> -->
+          <h1 class="display-4">Sally Perez</h1>
+          <p class="lead">Portfolio</p>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/srp_resume.pdf">Resume</a>
+          </li>
+        </ul>
+      <!-- </div> -->
+      </div>
+
     </header>
 
-    <main class="container">
-
-        <div class="media">
-            <img src="./assets/images/sally.jpg" class="mr-3 profile" alt="photo of sally">
-            <div class="media-body">
-              <h5 class="mt-0">About Me</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <main class="container mt-1">
+        <div class="media container row mt-1">
+            <img src="./assets/images/sally.jpg" class="img-fluid mr-3 profile col rounded-circle" alt="photo of sally">
+            <div class="media-body col">
+              <h4 class="mt-0">About Me</h4>
+              Web developer with strong problem solving mindset and passion to continuously learn new skills. 
             </div>
         </div>
 
-        <div class="row">
-            <div class="card col" style="width: 18rem;">
-                <img src="./assets/images/trail.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="row container-fluid mt-1">
+          <h4>Work</h4>
+            <div class="card col-md-4" >
+                <div class="card-body rounded">
+                  <img src="./assets/images/trail.jpg" class="card-img-top rounded" alt="...">
+                  <h3 class="card-text">Trail Chasers</h3>
+                  <p class="card-text">Team Project</p>
                 </div>
               </div>
-              <div class="card col" style="width: 18rem;">
-                <img src="./assets/images/weather.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card col-md-4" >
+                <div class="card-body rounded">
+                  <img src="./assets/images/weather.jpg" class="card-img-top rounded" alt="...">
+                  <h3 class="card-text">Weather Dashboard</h3>
+                  <p class="card-text">JavaScript/CSS</p>
                 </div>
               </div>
-              <div class="card col" style="width: 18rem;">
-                <img src="./assets/images/bright-yellow-brick.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card col-md-4" >
+                <div class="card-body rounded">
+                  <img src="./assets/images/bright-yellow-brick.jpg" class="card-img-top rounded" alt="...">
+                  <h3 class="card-text">Wizard of Oz Quiz</h3>
+                  <p class="card-text">JavaScript/CSS</p>
                 </div>
               </div>
         </div>
 
-        <section class="card">
+        <section class="card mt-1">
           <div id="contact-me" class="card-header">Contact Me</div>
           <section class="card-content">
               <ul>
