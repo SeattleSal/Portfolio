@@ -7,8 +7,8 @@
 /* color scheme for page */
 :root {
     --darkBlue: #264653;
-    --lightBlue: #2a9d8f;
-    --darkGray: #e76f51;
+    --lightTeal: #2a9d8f;
+    --darkOrange: #e76f51;
     --black: #1c1d21;
     --lightColor: #e9c46a;
 }
@@ -23,8 +23,7 @@ body {
 /* Header attributes for top header banner with name and nav links
 */
 .jumbotron {
-    /* padding: 20px; */
-    background-color: var(--darkGray);
+    background-color: var(--darkOrange);
     color: white;
     display: flex;
     flex-direction: row;
@@ -151,7 +150,7 @@ header a {
 
 }
 
-.big-item, .small-item {
+/* .big-item, .small-item {
     position: relative;
 }
 
@@ -161,7 +160,7 @@ header a {
 
 .small-item {
     width: 49.5%;
-}
+} */
 
 /* setting opacity of images in work section to allow hover
 // to make images appear full opacity
@@ -184,7 +183,7 @@ header a {
 }
 
 /* text to display over each image in bottom left hand corner */
-.text-box {
+/* .text-box {
     position: absolute;
     bottom: 20px;
     left: 5px;
@@ -200,9 +199,14 @@ header a {
 
 .text-box h3 {
     font-size: 10pt;
-} 
+}  */
 
 /* contact section, third and final card in main section */
+.card-content {
+    background-color: white;
+    color: var(--darkBlue);
+}
+
 .card-content ul {
     list-style-type: none;
     text-decoration: underline;
@@ -222,19 +226,21 @@ header a {
     color: var(--darkBlue);
 }
 
-/* text for work section images shows over bottom left
-// of each of the 5 images
-*/
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
 
 /* hover over each work image and the fade will dissapear */
 #work-content img:hover {
     opacity: 1;
 }
+
+
+/* text for work section images shows over bottom left
+// of each of the 5 images
+*/
+/* .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  } */
 
 /* media rules to adjust formatting for for smaller screens */
 /* @media screen and (max-width: 992px) {
