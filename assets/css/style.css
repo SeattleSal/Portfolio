@@ -44,8 +44,6 @@ header h1 {
 /* nav (navigation) attributes for nav section and unordered list
 */
 header nav {
-    /* padding-top: 15px;
-    margin-right: 20px; */
     font-size: 20px;
     top: 0px;
 }
@@ -67,49 +65,6 @@ header a {
     text-decoration: underline;
 }
 
-/* hero (big image) dimensions set here
-// hero image and overlapping text displayed right after the header banner
-*/
-/* .hero {
-    position: relative;
-    display: inline-block;
-}
-
-.hero-image {
-    height: 200px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/glazed-doughnuts-over-pink-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; 
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-} */
-
-/* Place text on bottom right of the hero image */
-/* .hero-text {
-    background-color: var(--lightBlue);
-    color: var(--darkBlue);
-    position: absolute;
-    right: 5%;
-    bottom: 5%;
-}
-
-.hero-text h2 {
-    font-size: 18pt;
-} */
-
-/* set width attributes on main section */
-/* main {
-    width: 900px;
-    margin: 0 auto;
-    max-width: 100%;
-} */
-
 /* Three main card sections (about me, work, contact me)
 // setup in flex style for formatting and to be able to adjust layout in media queries
 */
@@ -125,22 +80,10 @@ header a {
 }
 
 .card-header {
-    /* position: relative;
     float: none; */
     color: var(--darkBlue);
-    /* width: 20%; */
     font-size: 26pt;
     font-weight: bold;
-    /* text-align: right; */
-    /* margin-right: 5px;
-    padding: 30px;
-    border-right: var(--darkBlue) 2px solid; */
-}
-
-.card-content {
-    float: right;
-    width: 74%;
-    padding: 10px;
 }
 
 #work-content {
@@ -149,18 +92,6 @@ header a {
     justify-content: space-between;
 
 }
-
-/* .big-item, .small-item {
-    position: relative;
-}
-
-.big-item {
-    width: 100%;
-}
-
-.small-item {
-    width: 49.5%;
-} */
 
 /* setting opacity of images in work section to allow hover
 // to make images appear full opacity
@@ -181,25 +112,6 @@ header a {
     border: 8px solid var(--lightBlue);  
     margin: 1pt;
 }
-
-/* text to display over each image in bottom left hand corner */
-/* .text-box {
-    position: absolute;
-    bottom: 20px;
-    left: 5px;
-    background-color: var(--lightBlue);
-    color: var(--darkGray);
-    padding: 10px;
-    line-height: 1.5;
-}
-
-.text-box h2 {
-    font-size: 16pt;
-}
-
-.text-box h3 {
-    font-size: 10pt;
-}  */
 
 /* contact section, third and final card in main section */
 .card-content {
@@ -231,61 +143,4 @@ header a {
 #work-content img:hover {
     opacity: 1;
 }
-
-
-/* text for work section images shows over bottom left
-// of each of the 5 images
-*/
-/* .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  } */
-
-/* media rules to adjust formatting for for smaller screens */
-/* @media screen and (max-width: 992px) {
-
-    header, .card {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-image {
-        height: 100pt;
-    }
-
-    .hero-text {
-        position: static;
-    }
-
-    .card-header {
-        width: 80%;
-        text-align: center;
-        border-right: none;
-        border-bottom: var(--darkBlue) 2px solid;
-    }
-
-    header nav ul li, .card-content ul li {
-        margin: 10px;
-    }
-} */
-
-  /* @media screen and (max-width: 768px) {
-
-    header nav ul, .card-content ul, #work-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .small-item {
-        width: 100%;
-    } 
- }  */
-
-
-
-  
-
-
-
 
