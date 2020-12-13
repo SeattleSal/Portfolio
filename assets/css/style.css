@@ -144,3 +144,10 @@ header a {
     opacity: 1;
 }
 
+.btn-secondary {
+    background-color: var(--darkBlue);
+    width: 100%;
+
+
+}
+

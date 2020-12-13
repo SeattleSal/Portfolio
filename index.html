@@ -9,31 +9,32 @@
     <title>Portfolio of Sally Perez</title>
 </head>
 <body>
-  <header class="jumbotron container-flex">
-      <div class="float-left">
+  <header class="jumbotron container-flex row">
+      <div class="float-left col-md-12">
         <img src="./assets/images/sally.jpg" class="profile float-left mr-2" alt="photo of sally">
         <h1 class="display-4 float-left">Sally Perez</h1>
+        <h2 class="display-6 float-left">Full Stack Developer</h2>
         <!-- <p class="lead">Portfolio</p> -->
       </div>
-      <div class="container d-flex float-right justify-content-end">
-        <ul class="nav d-flex ">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Work Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="assets/srp_resume.pdf">Resume</a>
-          </li>
-        </ul>
-      </div>
+
+
+
   </header>
 
   <main class="container mt-1">
+
+    <div class="dropdown mt-2">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#about">About Me</a>
+        <a class="dropdown-item" href="#work">Work Examples</a>
+        <a class="dropdown-item" href="#contact">Contact Me</a>
+        <a class="dropdown-item" href="./assets/srp_resume.pdf">Resume</a>
+      </div>
+    </div>
+
       <div class="media container row mt-1">
           <div class="media-body col">
             <div id="about" class="card-header">About Me</div>
