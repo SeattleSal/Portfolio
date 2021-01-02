@@ -46,24 +46,6 @@ header h2 {
     border-radius: 50%;
 } 
 
-/* nav (navigation) attributes for nav section and unordered list
-*/
-header nav {
-    font-size: 20px;
-    top: 0px;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
 /* set color of hyperlinks in header */
 header a {
     color: var(--lightBlue);
@@ -105,18 +87,6 @@ header a {
     opacity: 0.8;
 }
 
-.big-item img {
-    width: 100%; 
-    height: 300px;
-    border: 8px solid var(--lightBlue);
-}
-
-.small-item img {
-    width: 100%;
-    height: 150px;
-    border: 8px solid var(--lightBlue);  
-    margin: 1pt;
-}
 
 /* contact section, third and final card in main section */
 .card-content {
@@ -152,7 +122,5 @@ header a {
 .btn-secondary {
     background-color: var(--darkBlue);
     width: 100%;
-
-
 }
 
