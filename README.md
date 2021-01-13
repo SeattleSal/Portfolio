@@ -23,7 +23,7 @@ Mobile:
 ![Portfolio screenshot at 992px](./assets/images/screencapture-mobile.png)
 
 ## Resources
-* [Bootstrap](https://getbootstrap.com/)
+* [Bootstrap](https://getbootstrap.com/) - used for layout design.
 * [Clouds Photo](./https://www.pexels.com/photo/atmosphere-background-beautiful-blue-531756/)
 * [Hiking Photo](https://www.pexels.com/photo/group-of-person-walking-in-mountain-1365425/)
 
