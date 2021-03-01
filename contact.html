@@ -10,57 +10,65 @@
 </head>
 
 <body>
+  
   <header class="jumbotron container mt-1">
-      <div>
-        <h1 class="display-4 w-100">Sally Perez</h1>
-        <h2 class="display-6 w-100">Full Stack Developer</h2>
-      </div>
+    <div class="container">
+      <h1 class="display-4 w-100">Sally Perez</h1>
+      <h2 class="display-6 w-100">Full Stack Developer</h2>
+    </div>
   </header>
 
-  <nav>
-    <div class="col dropdown mt-2 d-inline-block">
-      <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Menu
-      </button>
-      <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="./index.html">About Me</a>
-        <a class="dropdown-item" href="./portfolio.html">Portfolio</a>
-        <a class="dropdown-item" href="./contact.html">Contact Me</a>
-      </div>
-    </div>
-  </nav>
+  <!-- nav bar -->
+  <div class="container">
+    <ul class="nav nav-tabs nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
 
   <!-- Contact Section -->
   <main class="container mt-1">
-    <section id="contact" >
-      <div class="card text-center mt-2">
-        <div class = "card-body">
-          <span title="Email"><a href="mailto:seattlesally1@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-5x"></i></a></span>
-          <br>Email
+    <div class="container-fluid">
+      <div id="work" class="card-header text-center"></div>
+
+      <div class="row justify-content-center" id="contact">
+
+          <div class="card text-center m-1" style="width: 18rem">
+            <div class = "card-body">
+              <span title="Email"><a href="mailto:seattlesally1@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-5x"></i></a></span>
+              <br>Email
+            </div>
+          </div>
+          <div class="card text-center m-1" style="width: 18rem">
+            <div class = "card-body">
+              <span title="GitHub"><a href="https://github.com/SeattleSal/"
+                target="_blank"><i class="fab fa-github-square fa-5x"></i></a></span>
+                <br>GitHub
+            </div>
+          </div>
+        <div class="card text-center m-1" style="width: 18rem">
+          <div class = "card-body">
+            <span title="Linked In"><a href="https://www.linkedin.com/in/sallyrperez/"
+              target="_blank"><i class="fab fa-linkedin-in fa-5x"></i></a></span>
+              <br>
+              LinkedIn
+          </div>
         </div>
-      </div>
-      <div class="card text-center mt-2">
-        <div class = "card-body">
-          <span title="GitHub"><a href="https://github.com/SeattleSal/"
-            target="_blank"><i class="fab fa-github-square fa-5x"></i></a></span>
-            <br>GitHub
+        <div class="card text-center m-1" style="width: 18rem">
+          <div class = "card-body">
+            <span title="Resume"><a href="./assets/srp_resume.pdf"
+              target="_blank"><i class="fa fa-file fa-5x"></i></a></span>
+              <br>
+              Resume
+          </div>
         </div>
-      </div>
-    </section>
-    <div class="card text-center mt-2">
-      <div class = "card-body">
-        <span title="Linked In"><a href="https://www.linkedin.com/in/sallyrperez/"
-          target="_blank"><i class="fab fa-linkedin-in fa-5x"></i></a></span>
-          <br>
-          LinkedIn
-      </div>
-    </div>
-    <div class="card text-center mt-2">
-      <div class = "card-body">
-        <span title="Resume"><a href="./assets/srp_resume.pdf"
-          target="_blank"><i class="fa fa-file fa-5x"></i></a></span>
-          <br>
-          Resume
       </div>
     </div>
   </main>
