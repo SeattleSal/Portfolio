@@ -16,11 +16,15 @@ This page is an online portofolio to show off projects created. This will be ava
 * Github Link: https://github.com/SeattleSal/Portfolio
 
 ## Screenshots
-Full size:
-![Portfolio screenshot](./assets/images/screencapture-full-size.png)
+Home Page - About Me:
+![Portfolio screenshot](./assets/images/screenshot-homepage.png)
 
-Mobile:
-![Portfolio screenshot at 992px](./assets/images/screencapture-mobile.png)
+Portfolio:
+![Portfolio screenshot](./assets/images/screenshot-portfolio.png)
+
+Contact:
+![Portfolio screenshot](./assets/images/screenshot-contact.png)
+
 
 ## Resources
 * [Bootstrap](https://getbootstrap.com/) - used for layout design.
@@ -31,7 +35,7 @@ Mobile:
 
 MIT License
 
-Copyright (c) [2020] [Sally Perez]
+Copyright (c) [2021] [Sally Perez]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
